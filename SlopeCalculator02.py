@@ -29,7 +29,7 @@ run = y2 - y1
 if run == 0:
 	fslope = "undefined"
 elif run == 1:
-	print("lel ur mom")	
+	print("oops")	
 else:
 
 	fSlope = rise/run #real numbers are called float
