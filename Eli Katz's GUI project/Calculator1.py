@@ -97,11 +97,4 @@ btnR3.grid(row = 4, column = 2)
 btnSHOW = tk.Button(root, text = "Show", command = showAnswer)
 btnSHOW.grid(row = 5, column = 2)
 
-
-
-
-
-
-
-
 root.mainloop()
