@@ -2,6 +2,25 @@ import tkinter as tk
 from tkinter import ttk
 import random #import random
 
+#Function written by Mr. Miskew. 
+#return the greatest common factor of a and b
+def findGCF(a,b):
+	a = int(a)
+	b = int(b)
+	gcf = 1
+
+	for i in range(1,min(a,b) + 1, 1):
+		#MOD (%) gives the remainder when we divide two numbers
+		#if m%n == 0 n is a factor of m
+		if a % i == 0 and b % i == 0:
+			gcf = i
+
+	return gcf
+
+
+
+
+
 
 
 def random1():
@@ -32,7 +51,17 @@ def showAnswer():
 	c = float (entrC.get())
 	print (c)
 	
+	gcf = findGCF(a,b)
+	a = a / gcf
+	b = b / gcf
+
+
 	ms = "-" + str(a) + "/" + str(b)
+	if b == 1:
+		ms = "-" + str(a)
+	
+	
+	#ms = "-" + str(a/b)
 	
 	m = -1*a/b
 	
