@@ -137,9 +137,6 @@ def showAnswerSlope():
 
 	labANSSLOPE.config(text = slope1)
 
-def fontincrease():
-	print("font increased")
-	fontsize = 100
 
 
 
@@ -274,37 +271,6 @@ btnRS3.grid(row = 2, column = 2)
 
 btnRS4 = tk.Button(tab3, text = "Random", command = randomS4)
 btnRS4.grid(row = 3, column = 2)
-
-
-
-
-
-
-
-#*****************
-#All tabs
-checkboxTextSize = tk.Checkbutton(tab1, text = "text size", command = fontincrease)
-checkboxTextSize.grid(row = 0, column = 4)
-
-checkboxTextSize = tk.Checkbutton(tab2, text = "text size", command = fontincrease)
-checkboxTextSize.grid(row = 0, column = 4)
-
-checkboxTextSize = tk.Checkbutton(tab3, text = "text size", command = fontincrease)
-checkboxTextSize.grid(row = 0, column = 4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
